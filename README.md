@@ -4,15 +4,18 @@ This tool downloads the bing daily wallpaper by region and updates the desktop w
 This is a command line tool written in node.js
 
 ## Install
-Download or clone this repository.
+Necessary to install a version of **[nodejs](https://nodejs.org/en/)**.  
+Download or clone this repository.  
+Install dependencies by opening the command line of the project root directory and apply the command:  
+`npm install`
 
 ## Config file example
-Json configuration file, change the `region` if you want images from a different region and change the `save_directory` property, to hold the desired location to save the images.
-Properties:
-`base_url` Specifies the website to download the wallpapers. **Only working for bing**
-`region` Specifies the region from which the images must be downloaded. **This property is related to bing**
-`format` Specifies the format of the webrequests **Only supporting json format**
-`save_directory` Specifies the directory where the images will be saved
+Json configuration file, change the `region` if you want images from a different region and change the `save_directory` property, to hold the desired location to save the images.  
+Properties:  
+`base_url` Specifies the website to download the wallpapers. **Only working for bing**  
+`region` Specifies the region from which the images must be downloaded. **This property is related to bing**  
+`format` Specifies the format of the webrequests **Only supporting json format**  
+`save_directory` Specifies the directory where the images will be saved  
 
 Example:
 ```
@@ -24,12 +27,12 @@ Example:
 
 ## Usage
 ### Simple execution
-Open the command line move to the project root directory and type:
+Open the command line move to the project root directory and type:  
 `>node lib/bing-daily-wallpaper.js`
 
 ### Execute from any location with a bat file (windows)
-Create a bat file on any location then add to the PATH environment variable the directory where this bat file is located.
-Example of a bat file, `wallpaper.bat`:
+Create a bat file on any location then add to the PATH environment variable the directory where this bat file is located.  
+Example of a bat file, `wallpaper.bat`:  
 ```
 @echo off
 SET dir=%cd%
